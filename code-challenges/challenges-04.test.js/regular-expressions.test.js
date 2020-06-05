@@ -23,10 +23,10 @@ let $ = createSnippetWithJQuery(`
 `);
 
 const generateSubmitButton = () => {
-  let submitButton= '<input type="button" value="test">'
-
-  $('.createSnippetWithJQuery').append(submitButton);
+  let submitButton= '<button>submit</button>'
+  $('form').append($(submitButton));
 }
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -39,9 +39,7 @@ For example:
 'hello world' returns false
 ------------------------------------------------------------------------------------------------ */
 
-const isNum = (input) => {
-  // Solution code here...
-};
+const isNum = (input) => /\d/.test(input);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -51,9 +49,8 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
-const isCapitalized = (str) => {
-  // Solution code here...
-};
+const isCapitalized = (str) => str.match(/[A-Z][a-zA-Z]*/g) || [];
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -62,7 +59,15 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  let newArray = [];
+  arr.forEach(poop => {
+    if(/^[A-J]/.test(poop)){
+      newArray.push(poop);
+
+    }
+  })
+  return newArray;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
