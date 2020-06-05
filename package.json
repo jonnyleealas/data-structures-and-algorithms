@@ -1,17 +1,23 @@
 {
-  "name": "3-code-challenges",
+  "name": "data-structures-and-algorithms",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repo contaings code challenges for class 301.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --verbose",
-    "watch": "jest --watchAll"
+    "test": "jest --coverage --verbose"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonnyleealas/data-structures-and-algorithms.git"
+  },
   "author": "",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonnyleealas/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/jonnyleealas/data-structures-and-algorithms#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "jest": "^24.1.0"
+    "jest": "^26.0.1"
   }
 }
