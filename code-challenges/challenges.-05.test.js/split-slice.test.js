@@ -62,7 +62,12 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
-  // Solution code here...
+  let stringBitch = str.length
+  result.push(str)
+  for(let i=0; i < stringBitch ; i++){
+    str= str.slice(1,str.length);
+    result.push(str);
+  }
   return result;
 };
 
@@ -74,9 +79,9 @@ Write a function name wordsToCharList that, given a string as input, returns a n
 For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
-const wordsToCharList = (arr) => {
-  // Solution code here...
-};
+const wordsToCharList = (str) => str.split('');
+
+
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -122,7 +127,10 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  // Solution code here...
+  recipe.ingredients.forEach(element=>{
+    result.push(element.slice(element.indexOf(' ',4)+1, element.length));
+
+  })
   return result;
 };
 
@@ -134,11 +142,7 @@ Write a function named splitFoods that uses split to produce the same output as 
 You may also use other string or array methods.
 ------------------------------------------------------------------------------------------------ */
 
-const splitFoods = (recipe) => {
-  let result = [];
-  // Solution code here...
-  return result;
-};
+// const splitFoods = (recipe) => recipe.split(' ');
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 - Stretch Goal
@@ -214,10 +218,7 @@ Write a function named removeVowels that takes in a string and returns a new str
 For example, removeVowels('gregor') returns 'grgr'.
 ------------------------------------------------------------------------------------------------ */
 
-const removeVowels = (str) => {
-  // Solution code here...
-};
-
+const removeVowels = (str) => str.replace(/[aeiou]/g,'');
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 11 - Stretch Goal
 
@@ -229,7 +230,8 @@ Similarly, extractVowels('The quick brown fox') returns ['Th qck brwn fx', 'eioo
 ------------------------------------------------------------------------------------------------ */
 
 const extractVowels = (str) => {
-  // Solution code here...
+  let array= [];
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -326,7 +328,7 @@ xdescribe('Testing challenge 9', () => {
   });
 });
 
-xdescribe('Testing challenge 10', () => {
+describe('Testing challenge 10', () => {
   test('It should return the string without vowels', () => {
     expect(removeVowels('gregor')).toStrictEqual('grgr');
     expect(removeVowels('gregor').length).toStrictEqual(4);
