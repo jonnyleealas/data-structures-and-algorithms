@@ -18,7 +18,9 @@
   "homepage": "https://github.com/jonnyleealas/data-structures-and-algorithms#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
     "jest": "^26.0.1",
-    "mustache": "^4.0.1"
+    "mustache": "^4.0.1",
+    "supertest": "^4.0.2"
   }
 }
