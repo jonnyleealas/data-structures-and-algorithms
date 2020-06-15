@@ -268,7 +268,7 @@ const reversedString = (str) => {
   return gnirts;
 };
 
-// return str.split('').reverse().join;
+str.
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
 
