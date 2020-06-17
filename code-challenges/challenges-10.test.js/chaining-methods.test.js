@@ -172,9 +172,20 @@ CHALLENGE 6 - Stretch Goal
 Write a function named findShortest that, given the Star Wars data from Challenge 6, uses any combination of filter, map and reduce to return the name of the shortest character.
 ------------------------------------------------------------------------------------------------ */
 
-let findShortest = (data) => {
-  // Solution code here...
-};
+let findShortest = (data) =>{
+
+  let obj = data.reduce((acc, val) => {
+    if( Number(acc.height) > Number(val.height)){
+      acc = val;
+      return acc;
+    } else {
+      return acc;
+    }
+
+  });
+  return obj.name;
+}
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
@@ -267,7 +278,7 @@ xdescribe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should return the name of the shortest character', () => {
     expect(findShortest(starWarsData)).toStrictEqual('R2-D2');
   });
