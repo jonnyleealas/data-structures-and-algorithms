@@ -7,6 +7,8 @@ Complete the createServer function to include routes
 a GET request to / should respond with status of 200
 a DELETE request to /things/1 should respond with status of 405
 any other route should return status of 404
+
+
 ------------------------------------------------------------------------------------------------ */
 const createServer = () => {
   const express = require('express');
@@ -39,8 +41,6 @@ const toTitleCase = (arr) =>{
     return str[0].toUpperCase() + str.slice(1)
   })
 }
-
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
