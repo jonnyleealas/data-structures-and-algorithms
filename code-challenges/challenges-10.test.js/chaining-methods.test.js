@@ -23,9 +23,10 @@ const createServer = () => {
     let favFoods = ['cake', 'apples', 'bananas', 'tacos'];
     response.status(200).send(favFoods);
   });
-  app.get('*', (request, response) => {
-    response.status(404).send('not working');
-  });
+
+  app.get('*', (request, res) => res.status(404).send('Sorry this route does not exist.'));
+
+
 
   var server = app.listen(3301, function () {
     var port = server.address().port;
