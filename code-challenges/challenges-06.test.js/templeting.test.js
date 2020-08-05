@@ -69,8 +69,7 @@ let $ = createSnippetWithJQuery(`
 </script>
 `);
 
-const templatingWithMustache = () => characters.map(char => Mustache.render(
-  $('#template').html(),char))
+const templatingWithMustache = () => characters.map(char => Mustache.render($('#template').html(),char));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
