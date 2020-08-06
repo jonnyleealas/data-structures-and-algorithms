@@ -182,7 +182,6 @@ let findShortest = (data) =>{
     } else {
       return acc;
     }
-
   });
   return obj.name;
 }
