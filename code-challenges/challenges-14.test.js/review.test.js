@@ -139,7 +139,7 @@ This data could be sorted by name or price.
 
 const sortBy = (property, arr) => arr.sort((a,b)=> a[property]<b[property]? -1: 1);
 
-/* ------------------------------------------------------------------------------------------------
+/* --------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
 
 Write a function that determines if a given URL is secure, beginning with https://
