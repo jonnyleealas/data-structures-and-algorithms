@@ -2,5 +2,5 @@
 
 
 # Code Challenge Whiteboards
-- [Reverse Array](assets/reverse-array.md)
-- [Array Shift](assets/array-shift.md)
+- [Reverse Array](./assets/reverse-array.md)
+- [Array Shift](./assets/array-shift.md)
