@@ -27,4 +27,4 @@ const insertShiftArray = (arr,num) => {
 };
 
 console.log(insertShiftArray(arrayOfNums,5));
-console.lot(insertShiftArray(arrayOfNumbers, middleNumber));
+console.lot(insertShiftArray(arrayOfNumbers, middleNumber))
