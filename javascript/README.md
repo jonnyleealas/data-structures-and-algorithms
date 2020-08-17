@@ -1,6 +1,6 @@
-# data-structures-and-algorithms
+# 401 Javascript Code Challenges
 
-# Table of Contents
+
 # Code Challenge Whiteboards
-- [Reverse Array](javascript/assets/reverse-array.md)
-- [Array Shift](javascript/assets/array-shift.md)
+- [Reverse Array](./assets/reverse-array.md)
+- [Array Shift](./assets/array-shift.md)
