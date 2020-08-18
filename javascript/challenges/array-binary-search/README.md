@@ -8,4 +8,7 @@ Given an array and a target, find the index of the target.
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 We declared three variables. A start, mid, and index. We looked at the entire array. We compared the target to the middle of the array. If target was greater than the mid, we only looked at the greater half of the array on the next iteration. And vice Versa. Every iteration we halfed the array we looked at. 
 ## Solution
-[Whiteboard]('../assets/array-binary-search.md')
+
+
+
+[Whiteboard]('../../assets/array-binary-search.md')
