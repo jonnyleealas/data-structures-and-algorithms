@@ -12,3 +12,5 @@ We declared three variables. A start, mid, and index. We looked at the entire ar
 
 
 [Whiteboard]('../../assets/array-binary-search.md')
+
+<img width="1021" alt="Screen Shot 2020-08-17 at 9 10 29 PM" src="https://user-images.githubusercontent.com/63610026/90469648-42fd4200-e0ce-11ea-8a1d-df9102ddbfa3.png">
