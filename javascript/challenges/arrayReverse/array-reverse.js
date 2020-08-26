@@ -6,7 +6,7 @@
 // The loop will start at array.length -1 index position. 
 // It goes through the array length and subtracts 1; this will be the new starting position.
 // Every position the loop is in currently would need to be pushed into the new empty array.
-// Lastly I would need to return the new array. 
+// Lastly I would need to return the new array.
 
 
 const arrayOfNumbers = [89, 2354, 3546, 23, 10, -923, 823, -12]
