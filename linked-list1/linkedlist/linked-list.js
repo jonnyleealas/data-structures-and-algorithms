@@ -5,6 +5,7 @@ const Node = require('./node')
 class LinkedList {
   constructor(){
     this.head = null;
+
   }
 
   append(value){
@@ -21,7 +22,7 @@ class LinkedList {
 
     return this;
   }
-  //this is used to insert to the beggining of a linked list
+  //this is used to insert to the beginning of a linked list
   insert(value){
     const node = new Node(value);
     node.next = this.head;
@@ -46,6 +47,42 @@ class LinkedList {
     return false;
   }
 
+  insertBefore(value, newVal){
+    let currentNode = this.head;
+    while(currentNode.next !== currentNode){
+      if(currentNode.next.value === value){
+        let node = new Node(newVal);
+        node.next = currentNode.next;
+        currentNode.next = node;
+        return;
+      }
+      currentNode = currentNode.next;
+    }
+  }
+
+  insertAfter(value, newVal){
+    let newNode = new Node(newVal)
+
+    if(this.head.value === value){
+      newNode.next = this.head.next;
+      this.head.next = newNode;
+      return
+    }
+    let currentNode = this.head;
+    let nextNode;
+    while(currentNode.next){
+      nextNode = currentNode.next;
+      if(currentNode.next.value === value){
+        newNode = new Node(newVal, nextNode)
+        currentNode.next = newNode;
+        return
+      }
+      currentNode = currentNode.next
+    }
+    return
+  }
+
+
   toString() {
     let stringToReturn = '';
     let current = this.head;
@@ -61,12 +98,19 @@ class LinkedList {
 module.exports = LinkedList;
 
 let testLinkedList = new LinkedList();
-
+/// Append
 testLinkedList.append('a');
 testLinkedList.append('b');
 testLinkedList.append('c');
-// testLinkedList.insert('d');
+testLinkedList.append('e')
+/// Insert
 testLinkedList.insert('d',1);
-console.log(testLinkedList.includes('c'));
-// console.log(testLinkedList);
+/// Insert Before
+testLinkedList.insertBefore('c', 'f' );
+/// Insert After
+testLinkedList.insertAfter('c', 'g');
+testLinkedList.insertAfter('g','jonny')
+/// Includes
+console.log('Includes:',testLinkedList.includes('jonny'));
+/// To String
 console.log(testLinkedList.toString());
