@@ -9,3 +9,4 @@
 
 ## Data Structures
 - [Linked List](data-structures/linked-list1/linkedlist/linked-list.js)
+- [Zipped List](data-structures/linked-list1/linkedlist/zipped-list.js)
