@@ -82,6 +82,7 @@ class LinkedList {
     return
   }
 
+
   kthFromEnd(k){
     let arr = [];
     let currentNode = this.head;
@@ -90,21 +91,22 @@ class LinkedList {
       currentNode = currentNode.next;
 
     }
+    console.log(arr)
     return (arr[arr.length -1 - k])
   }
-
-
 
   toString() {
     let stringToReturn = '';
     let current = this.head;
-    while (current.next) {
+    while (current) {
       stringToReturn += '{ ' + current.value + ' } -> '
       current = current.next
     }
-    stringToReturn += '{ ' + current.value + ' } -> '
     return stringToReturn + 'NULL';
   }
+
 }
+
+
 
 module.exports = LinkedList;

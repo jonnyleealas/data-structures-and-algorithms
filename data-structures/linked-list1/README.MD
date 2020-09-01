@@ -8,6 +8,8 @@ Write methods for a Linked List
 1. Method **append** which allows user to add a given value to the end of a list.
 1. Method **insertBefore** which allows a user to add a new value before a pre-existing value.
 1. Method **insertAfter** which adds a new node value after a value node.
+1. Method **kthFromEnd** Return node (k) from the end of a linked list.
+1. Method **zip()** Combines two linked list into one alternating list.
 
 ## Approach and Efficiency 
 - insert() O(1)
@@ -16,10 +18,13 @@ Write methods for a Linked List
 - append() O(n)
 - insertBefore() O(n)
 - insertAfter() O(n)
-
+- kthFromEnd() O(n)
+- zip() O(n) 
 ## Solution
 
-![screenshot (2)](https://user-images.githubusercontent.com/63610026/91484504-314e3400-e85e-11ea-9a4b-b67ed6303fcc.jpeg)
+- [Linked List Whiteboard](./assets/linked-list.md)
+- [Zipped List Whiteboard](./assets/zipped-list.md)
+
 
 
 
