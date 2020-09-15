@@ -4,7 +4,7 @@
 const LinkedList = require('./linked-list');
 const ZipList = require('./zipped-list');
 
-let testLinkedList = new LinkedList();
+
 
 
 describe('Combine two linked list',()=>{
@@ -26,22 +26,17 @@ describe('Combine two linked list',()=>{
   })
 })
 
+describe('kthFromEnd',()=>{
 
-/// Append
-// testLinkedList.append('a');
-// testLinkedList.append('b');
-// testLinkedList.append('c');
-// testLinkedList.append('e')
-/// Insert
-// testLinkedList.insert('d',1);
-/// Insert Before
-// testLinkedList.insertBefore('c', 'f' );
-/// Insert After
-// testLinkedList.insertAfter('c', 'g');
-// testLinkedList.insertAfter('g','jonny')
-/// Includes
-// console.log('Includes:',testLinkedList.includes('jonny'));
-/// kthFromEnd
-// console.log('kthFromEnd:',testLinkedList.kthFromEnd(3));
-/// To String
-// console.log(testLinkedList.toString());
+  it('Should return number k spaces from the end',()=>{
+    let ll1 = new LinkedList();
+    ll1.append(1)
+    ll1.append(2)
+    ll1.append(3)
+    ll1.append(4)
+    ll1.append(5)
+    let result = ll1.kthFromEnd(3);
+    expect(result).toBe(2)
+  })
+})
+

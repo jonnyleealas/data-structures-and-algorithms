@@ -10,3 +10,9 @@
 ## Data Structures
 - [Linked List](data-structures/linked-list1/linkedlist/linked-list.js)
 - [Zipped List](data-structures/linked-list1/linkedlist/zipped-list.js)
+
+## Queue With Stacks
+- [Queue with Stacks](data-structures/queueWithStacks/queue-with-stacks.js)
+
+## Fifo Animal Shelter
+- [Fifo Animal Shelter](data-structures/fifoAnimalShelter/fifo-animal-shelter.js)
