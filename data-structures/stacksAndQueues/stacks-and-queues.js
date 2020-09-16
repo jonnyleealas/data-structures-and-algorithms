@@ -46,5 +46,41 @@ class Stack {
   }
 }
 
+class Queue{
+  constructor(){
+    this.front = null;
+    this.back = null;
+    this.queue = [];
+  }
+  enqueue(value){
+    let node = new Node(value);
+    if (this.front === null){
+      this.front = this.rear
+      this.rear = node;
+    } else {
+      this.rear.next = node;
+      this.rear = node;
+    }
+  }
+  dequeue(){
+    if(this.front ===null) {
+      throw new Error('Nothing to dequeue');
+    }
+    return this.queue.shift();
+
+  }
+
+  peek(){
+    if (!this.front){
+      return 'nothing to peek';
+    } else if(this.front){
+      console.log(this.front .value);
+      return this.front.value;
+    }
+  }
+  isEmpty(){
+    return this.front === null;
+  }
+}
 
 module.exports = {Stack, Queue};
