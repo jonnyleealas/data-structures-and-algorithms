@@ -24,7 +24,7 @@ Write methods for a Linked List
 
 - [Linked List Whiteboard](./assets/linked-list.md)
 - [Zipped List Whiteboard](./assets/zipped-list.md)
-- [Queue with Stacks](./assets/queue-with-stacks.md)
 - [Kth From End](./assets/kth-from-end.md)
+
 
 

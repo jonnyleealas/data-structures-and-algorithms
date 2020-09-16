@@ -11,6 +11,17 @@ Should raise exception when called on empty stack
 -Should raise exception when called on empty stack
 - Define a method called isEmpty that takes no argument, and returns a boolean indicating whether or not the stack is empty.
 
+### Tasks Checklist
+- [ ] Mercury
+- [ ] Venus
+- [ ] Earth (Orbit/Moon)
+- [ ] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
+
 ## Approach & Efficiency
 Big O for methods will be O(1)
 
@@ -26,3 +37,6 @@ Big O for methods will be O(1)
 - dequeue: Removes a node from the front of a queue and returns nodes value.
  Peek: Returns value of the node in the front a the queue without removing from queue. Should raise exception when called on empty queue.
  - isEmpty: Returns boolean indicating whether or not a queue is empty. 
+
+# Whiteboard
+- [Queue with Stacks](../linked-list1/assets/queue-with-stacks.md)
