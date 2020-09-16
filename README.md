@@ -11,6 +11,9 @@
 - [Linked List](data-structures/linked-list1/linkedlist/linked-list.js)
 - [Zipped List](data-structures/linked-list1/linkedlist/zipped-list.js)
 
+## Stacks and Queues
+- [Stacks and Queues](data-structures/stacksAndQueues/stacks-and-queues.js)
+
 ## Queue With Stacks
 - [Queue with Stacks](data-structures/queueWithStacks/queue-with-stacks.js)
 
