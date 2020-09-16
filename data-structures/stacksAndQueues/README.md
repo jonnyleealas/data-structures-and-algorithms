@@ -13,11 +13,11 @@ Should raise exception when called on empty stack
 - Define a method called isEmpty that takes no argument, and returns a boolean indicating whether or not the stack is empty.
 ```
 ### Tasks Checklist
-- [ ] Node Class
-- [ ] push
-- [ ] pop
-- [ ] peek
-- [ ] isEmpty
+- [x] Node Class
+- [x] push
+- [x] pop
+- [x] peek
+- [x] isEmpty
 
 
 ## Approach & Efficiency
@@ -39,8 +39,8 @@ Big O for methods will be O(1)
  - isEmpty: Returns boolean indicating whether or not a queue is empty. 
 
 ### Tasks Checklist
-- [ ]enqueue
-- [ ]dequeue
-- [ ]peek
-- [ ]isEmpty
+- [x]enqueue
+- [x]dequeue
+- [x]peek
+- [x]isEmpty
 
