@@ -35,15 +35,15 @@ class Stack {
     return this.top
   }
   // Returns true or false if stack stack is empty
-  isEmpty() {
-    if (this.top){
-      console.log('STACK IS EMPTY');
-      return true;
-    } else if(!this.top){
-      console.log('STACK IS NOT EMPTY');
+
+  isEmpty(){
+    if(this.top){
+      return true
+    } else{
       return false;
     }
   }
+
 }
 
 class Queue{
@@ -79,7 +79,11 @@ class Queue{
     }
   }
   isEmpty(){
-    return this.front === null;
+    if(this.front){
+      return true
+    } else{
+      return false;
+    }
   }
 }
 

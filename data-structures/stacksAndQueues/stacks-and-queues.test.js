@@ -37,11 +37,13 @@ describe('stacks', ()=>{
     expect(result.value).toBe('c')
 
   })
-  it('isEmpty should return is empty', ()=>{
+  it('isEmpty should return true', ()=>{
 
     let result = stackClass.isEmpty()
     expect(result).toBe(true)
   })
+
+
 })
 
 
