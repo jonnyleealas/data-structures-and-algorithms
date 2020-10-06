@@ -1,5 +1,5 @@
 'use strict'
-const output = [];
+
 class TreeNode {
   constructor(value, left = null, right = null) {
     this.value = value;
@@ -110,4 +110,4 @@ class BinarySearchTree extends BinaryTree {
   }
 }
 
-module.exports = { BinarySearchTree, TreeNode, BinaryTree };
+module.exports = { BinarySearchTree, TreeNode};
