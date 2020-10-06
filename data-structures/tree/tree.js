@@ -1,4 +1,5 @@
 'use strict'
+// const queue = require('../../data-structures/stacksAndQueues.js');
 
 class TreeNode {
   constructor(value, left = null, right = null) {
@@ -44,6 +45,13 @@ class BinaryTree {
     }
     _walk(this.root);
     return results;
+  }
+  findMaxValue(){
+    let current = this.root;
+    while(current.right !== null){
+      current = current.right
+    }
+    return current.value;
   }
 }
 
@@ -110,4 +118,4 @@ class BinarySearchTree extends BinaryTree {
   }
 }
 
-module.exports = { BinarySearchTree, TreeNode};
+module.exports = { BinarySearchTree, TreeNode, BinaryTree};
