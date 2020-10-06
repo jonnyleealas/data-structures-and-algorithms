@@ -39,8 +39,8 @@ Big O for methods will be O(1)
  - isEmpty: Returns boolean indicating whether or not a queue is empty. 
 
 ### Tasks Checklist
-- [x]enqueue
-- [x]dequeue
-- [x]peek
-- [x]isEmpty
+- [x] enqueue
+- [x] dequeue
+- [x] peek
+- [x] isEmpty
 
