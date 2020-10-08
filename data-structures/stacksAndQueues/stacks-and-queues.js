@@ -74,7 +74,7 @@ class Queue{
     if (!this.front){
       return 'nothing to peek';
     } else if(this.front){
-      console.log(this.front .value);
+      console.log(this.front.value);
       return this.front.value;
     }
   }

@@ -1,5 +1,5 @@
 'use strict';
-const {BinarySearchTree, TreeNode} = require('../tree');
+const {BinarySearchTree, TreeNode, BinaryTree} = require('../tree');
 
 
 describe('Binary tree tests', () => {
@@ -53,3 +53,30 @@ describe('Binary tree tests', () => {
   });
 
 });
+
+describe(' find max value method', () => {
+
+  it('Should traverse through a binary tree and return max value', () => {
+
+    let twenty = new TreeNode(20);
+    let twelve = new TreeNode(12);
+    let six = new TreeNode(6);
+    let seventeen = new TreeNode(17);
+    let thirtytwo = new TreeNode(32);
+    let twentyfive = new TreeNode(25);
+    let fourty = new TreeNode(40);
+    let seventy = new TreeNode(70)
+    twenty.left = twelve;
+    twenty.right = thirtytwo;
+    twelve.left = six;
+    twelve.right = seventeen;
+    thirtytwo.right = fourty;
+    thirtytwo.left = twentyfive;
+    fourty.right= seventy;
+
+    let tree = new BinaryTree(twenty)
+    let result = tree.findMaxValue()
+    expect(result).toBe(70);
+
+  })
+})

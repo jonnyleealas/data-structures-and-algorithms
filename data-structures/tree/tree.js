@@ -1,4 +1,5 @@
 'use strict'
+const { Queue, Stack } = require('../stacksAndQueues/stacks-and-queues.js');
 
 class TreeNode {
   constructor(value, left = null, right = null) {
@@ -45,8 +46,31 @@ class BinaryTree {
     _walk(this.root);
     return results;
   }
-}
+  findMaxValue(){
+    let current = this.root;
+    while(current.right !== null){
+      current = current.right
+    }
+    return current.value;
+  }
+  breadthFirst(tree){
+    let breadth = new Queue();
+    let output = [];
 
+    breadth.enqueue(tree.node)
+    while(breadth.queue){
+      let front = breadth.enqueue;
+      output.push(front.value)
+      if(front.left){
+        breadth.enqueue(front.left)
+      }
+      if(front.right){
+        breadth.enqueue(front.right)
+      }
+    }
+    return output;
+  }
+}
 
 
 let twenty = new TreeNode(20);
@@ -57,7 +81,6 @@ let thirtytwo = new TreeNode(32);
 let twentyfive = new TreeNode(25);
 let fourty = new TreeNode(40);
 let seventy = new TreeNode(70)
-
 twenty.left = twelve;
 twenty.right = thirtytwo;
 twelve.left = six;
@@ -66,13 +89,9 @@ thirtytwo.right = fourty;
 thirtytwo.left = twentyfive;
 fourty.right= seventy;
 
-let tree = new BinaryTree(twenty);
-
-console.log(tree.preOrder());
-// console.log(tree.inOrder());
-// console.log(tree.postOrder());
-// console.log(JSON.stringify(tree, undefined, 4))
-
+// let tree = new BinaryTree(twenty)
+let bees = new BinaryTree(twenty);
+console.log(bees.breadthFirst());
 
 class BinarySearchTree extends BinaryTree {
   add(value) {
@@ -110,4 +129,4 @@ class BinarySearchTree extends BinaryTree {
   }
 }
 
-module.exports = { BinarySearchTree, TreeNode};
+module.exports = { BinarySearchTree, TreeNode, BinaryTree};
