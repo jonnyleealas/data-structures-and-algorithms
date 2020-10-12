@@ -53,19 +53,22 @@ class BinaryTree {
     }
     return current.value;
   }
-  breadthFirst(tree){
-    let breadth = new Queue();
+  breadthFirst(){
+    let breadth = [];
     let output = [];
 
-    breadth.enqueue(tree.node)
-    while(breadth.queue){
-      let front = breadth.enqueue;
+    breadth.push(this.root)
+
+    while(breadth.length){
+      //pull of front
+      let front = breadth.shift();
+      console.log(front)
       output.push(front.value)
       if(front.left){
-        breadth.enqueue(front.left)
+        breadth.push(front.left)
       }
       if(front.right){
-        breadth.enqueue(front.right)
+        breadth.push(front.right)
       }
     }
     return output;
