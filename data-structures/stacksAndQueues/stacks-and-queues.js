@@ -13,28 +13,28 @@ class Stack {
 
     this.top = null;
   }
-  //pushes new node to the top of the stack
+
   push(value){
     let node = new Node(value);
     node.next = this.top;
     this.top = node
     return this.top;
   }
-  // pops last stack off the top
+
   pop(){
-    if(this.top === null) throw new Error ('STACK IS EMPTY');
+    if(this.top === null) throw new Error ('Empty');
 
     let take = this.top;
     this.top = this.top.next;
     return take.value;
   }
-  // shows the first thing in a stack
+
   peek(){
-    if(this.top === null) throw new Error ('STACK IS EMPTY');
+    if(this.top === null) throw new Error ('Empty');
 
     return this.top
   }
-  // Returns true or false if stack stack is empty
+
 
   isEmpty(){
     if(this.top){
@@ -53,13 +53,13 @@ class Queue{
     this.queue = [];
   }
   enqueue(value){
-    let node = new Node(value);
+    let newNode = new Node(value);
     if (this.front === null){
       this.front = this.rear
-      this.rear = node;
+      this.rear = newNode;
     } else {
-      this.rear.next = node;
-      this.rear = node;
+      this.rear.next = newNode;
+      this.rear = newNode;
     }
   }
   dequeue(){
