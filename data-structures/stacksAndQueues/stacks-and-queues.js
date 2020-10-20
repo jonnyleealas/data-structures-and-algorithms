@@ -4,6 +4,7 @@ class Node {
   constructor(value){
     this.value = value;
     this.next = null;
+
   }
 }
 
@@ -12,12 +13,25 @@ class Stack {
   constructor(){
 
     this.top = null;
+
   }
 
+
   push(value){
+
+  //pushes new node to the top of the stack
+  push(value) {
+
+    //this creates new node with value
+
     let node = new Node(value);
-    node.next = this.top;
+
+    // here we are taking top and assigning it to our new node we created above
+    node.next = this.top; // here node.next and top are the same
+
+    //  here we need to reorder node and top, we reset this.top to be the new node we created above
     this.top = node
+
     return this.top;
   }
 
@@ -53,17 +67,26 @@ class Queue{
     this.queue = [];
   }
   enqueue(value){
+ fizzbuzztree
     let newNode = new Node(value);
     if (this.front === null){
       this.front = this.rear
       this.rear = newNode;
     } else {
       this.rear.next = newNode;
-      this.rear = newNode;
+
+    let node = new Node(value);
+    this.queue.push(node)
+    if (this.front === null){
+      this.front = node;
+      this.rear = node;
+    } else {
+      this.rear = node;
+
     }
   }
   dequeue(){
-    if(this.front ===null) {
+    if(this.front === null) {
       throw new Error('Nothing to dequeue');
     }
     return this.queue.shift();
@@ -87,4 +110,4 @@ class Queue{
   }
 }
 
-module.exports = {Stack, Queue};
+module.exports = {Stack, Queue, Node};
