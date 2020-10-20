@@ -16,4 +16,4 @@ O(n)
 ```
 
 ## Solution
-[Fizzbuzztree WhiteBoard](../../assets/fizzbuzztree.md)
+[Fizz-buzz-tree WhiteBoard](../../assets/fizzbuzztree.md)
