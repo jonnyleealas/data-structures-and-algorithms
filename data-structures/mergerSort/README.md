@@ -89,7 +89,7 @@ else{
 7. We can not return results.
 ```
 return arr;
-ß
+
 ```
 
 ![White Board](./merge-sort.png)
