@@ -18,6 +18,7 @@ This method takes in an array and builds a new sorted array one item at a time. 
 
 ## Pseudo Code
 ```
+sdf
   InsertionSort(int[] arr)
   
     FOR i = 1 to arr.length
