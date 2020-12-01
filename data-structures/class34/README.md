@@ -1,4 +1,4 @@
-# Linked List
+## Code Challenge Find Most Words
 
 ## Challenge Description 
 Ask the candidate to write a function that determines the most common word in a book.
