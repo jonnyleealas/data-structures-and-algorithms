@@ -9,13 +9,7 @@ Create a hashtable class with the methods below.
 
 
 ## Approach & Efficiency
-<<<<<<< Updated upstream:data-structures/hashtable/README.md
 Worst Case O(n)
 Best Case O(1)
 ## API
 <!-- Description of each method publicly available in each of your hashtable -->
-=======
-O(1) best case
-O(n) worst case
-
->>>>>>> Stashed changes:data-structures/hashtables/README.md
