@@ -11,5 +11,7 @@ Create a hashtable class with the methods below.
 ## Approach & Efficiency
 Worst Case O(n)
 Best Case O(1)
-## API
-<!-- Description of each method publicly available in each of your hashtable -->
+## Testing
+```
+Run: $npm test hashtable.test.js
+```
