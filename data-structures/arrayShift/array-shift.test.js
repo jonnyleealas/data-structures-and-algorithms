@@ -1,5 +1,4 @@
 'use strict'
-
 const arrayShift = require ('./array-shift.js');
 
 
