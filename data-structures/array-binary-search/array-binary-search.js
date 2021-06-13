@@ -22,7 +22,7 @@ function binarySearch (arr, key){
 
     }
   }
-  return -1
+  return false
 }
 
-console.log(binarySearch(array, keyIndex), array[binarySearch(array, keyIndex)], keyIndex);
+module.exports = binarySearch;
