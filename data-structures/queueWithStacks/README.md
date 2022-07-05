@@ -10,7 +10,6 @@ Create a class called Qeueues with stacks.
 - enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
 - dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
 
-
 ```
 
 ## Approach & Efficiency

@@ -9,14 +9,14 @@
 // Lastly I would need to return the new array.
 
 
-const arrayOfNumbers = [89, 2354, 3546, 23, 10, -923, 823, -12]
 
-const reverseFunction = (arr) =>{
-  let newArray = [];
-  for ( let i= arr.length -1; i>=0; i--){
-    newArray.push(arr[i]);
+
+function reverseArray(array){
+  let newArray = []
+  for(let i = array.length - 1; i >= 0; i--){
+    newArray.push(array[i])
   }
-  return newArray;
+  return newArray
 }
 
-console.log(reverseFunction(arrayOfNumbers));
+module.exports = reverseArray;
