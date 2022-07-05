@@ -19,6 +19,7 @@ class Stack {
 
   push(value){
 
+
   //pushes new node to the top of the stack
   push(value) {
 
@@ -67,6 +68,11 @@ class Queue{
     this.queue = [];
   }
   enqueue(value){
+
+    let node = new Node(value);
+    this.queue.push(node)
+    if (this.front === null){
+
  fizzbuzztree
     let newNode = new Node(value);
     if (this.front === null){
@@ -78,6 +84,7 @@ class Queue{
     let node = new Node(value);
     this.queue.push(node)
     if (this.front === null){
+
       this.front = node;
       this.rear = node;
     } else {
